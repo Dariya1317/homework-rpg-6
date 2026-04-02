@@ -8,5 +8,6 @@ public class HpHandler extends DefenseHandler {
     public void handle(int incomingDamage, ArenaFighter target) {
         target.takeDamage(incomingDamage);
         System.out.println("[HP] " + target.getName() + " takes " + incomingDamage + " damage. HP: " + target.getHealth());
+        System.out.println(target.getName() + " takes " + incomingDamage + " damage. HP: " + target.getHealth());
     }
 }
